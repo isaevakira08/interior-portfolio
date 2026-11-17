@@ -1,0 +1,285 @@
+/* Плавная прокрутка по якорным ссылкам */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка и навигация */
+.header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #eaeaea;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #8b6f47;
+}
+
+/* Главный баннер */
+.hero {
+    background: linear-gradient(rgba(20, 20, 20, 0.55), rgba(20, 20, 20, 0.55)),
+                url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: #ffffff;
+    padding: 130px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    line-height: 1.25;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 620px;
+    margin: 0 auto 32px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8b6f47;
+    color: #ffffff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #725936;
+}
+
+/* Общие стили секций */
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f7f5;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* Секция Обо мне */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #e5e0d8;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.about-text p {
+    margin-bottom: 16px;
+    color: #444444;
+    font-size: 1.05rem;
+}
+
+/* Сетка галереи */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.card-body p {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* Форма обратной связи */
+.contact-wrapper {
+    max-width: 600px;
+}
+
+.contact-wrapper > p {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #555555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b6f47;
+}
+
+/* Футер */
+.footer {
+    background-color: #1f1f1f;
+    color: #cccccc;
+    padding: 40px 0;
+    font-size: 0.95rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-contacts,
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 14px 0;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.85rem;
+    }
+
+    .about-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
