@@ -3,79 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Родионова Кира | Сайт-визитка</title>
+    <title>Сайт-визитка | Родионова Кира</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Шапка с фоном ГУАП -->
-    <header class="hero" style="background-image: linear-gradient(rgba(26, 43, 76, 0.85), rgba(26, 43, 76, 0.9)), url('preview.jpg');">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Родионова Кира Константиновна</h1>
-                <p class="subtitle">Группа 4616 | Направление 09.03.03 «Прикладная информатика»[cite: 2]</p>
-                <p class="focus">Направленность: «Прикладной искусственный интеллект и наука о данных» (ГУАП)[cite: 2]</p>
-            </div>
-            <div class="hero-image">
-                <img src="wr-960.webp" alt="Здание ГУАП" class="university-img">
-            </div>
+    <!-- Навигационное меню -->
+    <nav class="navbar">
+        <div class="logo">Кира Р.</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#achievements">Достижения</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Главный экран -->
+    <header id="hero" class="section hero-section">
+        <div class="hero-content glass">
+            <h1>Родионова Кира Константиновна</h1>
+            <h2>Студентка группы 4616</h2>
+            <p>Направление: 09.03.03 «Прикладная информатика»<br>
+            Программа: «Прикладной искусственный интеллект и наука о данных»</p>
+            <a href="#about" class="btn">Узнать больше</a>
         </div>
     </header>
 
-    <main class="container">
-        <!-- 1. Краткая информация -->
-        <section class="card">
-            <h2>1. Краткая информация о себе</h2>
-            <p>Здравствуйте! Меня зовут Кира, я студентка Санкт-Петербургского государственного университета аэрокосмического приборостроения (ГУАП). Обучаюсь в группе 4616 по программе бакалавриата «Прикладная информатика»[cite: 2].</p>
+    <main>
+        <!-- О программе и планах -->
+        <section id="about" class="section">
+            <div class="container glass">
+                <h2>Обо мне и программе</h2>
+                <div class="text-content">
+                    <h3>Как я понимаю образовательную программу?</h3>
+                    <p>Программа «Прикладной искусственный интеллект и наука о данных» направлена на подготовку специалистов, способных работать с большими данными и создавать интеллектуальные системы. На мой взгляд, она открывает огромные возможности в сферах Data Science, машинного обучения и разработки ИИ. Мне кажется наиболее перспективным направление, связанное с обучением нейросетей и их внедрением в реальные бизнес-процессы.</p>
+                    
+                    <h3>Почему я выбрала эту программу?</h3>
+                    <p>Я выбрала эту программу, потому что меня всегда привлекало программирование и современные технологии. Искусственный интеллект — это будущее, и мне хочется быть частью этого процесса, понимать, как работают алгоритмы, и уметь применять их на практике.</p>
+
+                    <h3>Мои профессиональные планы</h3>
+                    <p>После окончания университета я хотела бы стать разработчиком или инженером данных. В ближайшие годы моя цель — освоить профильные технологии, набраться опыта в реальных проектах и, возможно, начать делать собственные "иишки" (ИИ-проекты). В перспективе я хочу работать в крупной IT-компании и решать сложные задачи, связанные с анализом данных и машинным обучением.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- 2. Образовательная программа -->
-        <section class="card">
-            <h2>2. Как я понимаю образовательную программу</h2>
-            <p>Я понимаю эту образовательную программу как подготовку востребованных специалистов на стыке классического программирования, глубокого анализа данных и современных интеллектуальных систем[cite: 2]. Она открывает возможности для создания умных алгоритмов, автоматизации процессов и решения сложных задач[cite: 2].</p>
+        <!-- Навыки -->
+        <section id="skills" class="section">
+            <div class="container glass">
+                <h2>Навыки и интересы в IT</h2>
+                <p>На данный момент я только начинаю свой путь в IT, но уже успела познакомиться со следующими инструментами и технологиями:</p>
+                <ul class="skills-list">
+                    <li><strong>Python</strong> — базовые знания, понимание синтаксиса</li>
+                    <li><strong>HTML</strong> — создание структуры веб-страниц</li>
+                    <li><strong>Docker</strong> — понимание контейнеризации</li>
+                    <li><strong>Postman</strong> — тестирование API</li>
+                    <li><strong>Kaiten</strong> — работа с таск-трекерами</li>
+                    <li><strong>Miro</strong> — создание досок и схем</li>
+                    <li><strong>Obsidian</strong> — ведение заметок и структурирование информации</li>
+                </ul>
+                <p>Мне еще предстоит определиться с узким направлением, но я точно хочу связать свою жизнь с программированием и разработкой ИИ.</p>
+            </div>
         </section>
 
-        <!-- 3. Выбор программы -->
-        <section class="card">
-            <h2>3. Почему я выбрала эту образовательную программу</h2>
-            <p>Я выбрала это направление из-за огромного интереса к сфере IT, программированию и перспективам развития искусственного интеллекта[cite: 2]. Меня привлекает возможность создавать технологии, способные обучаться и приносить реальную пользу.</p>
+        <!-- Достижения и сертификат -->
+        <section id="achievements" class="section">
+            <div class="container glass">
+                <h2>Достижения и мероприятия</h2>
+                <div class="achievement-card">
+                    <div class="achievement-text">
+                        <h3>Экскурсия в IT-компанию Neoflex</h3>
+                        <p><strong>Дата:</strong> 27 октября 2026 года</p>
+                        <p>Я приняла участие в экскурсии в IT-компанию Neoflex, которая является партнёром Института №4 ГУАП. Это был полезный опыт, позволивший узнать больше о том, как устроена работа в сфере IT изнутри.</p>
+                    </div>
+                    <div class="achievement-img">
+                        <!-- Твой сертификат -->
+                        <img src="certificate.png" alt="Сертификат об участии в экскурсии Neoflex">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- 4. Профессиональные планы -->
-        <section class="card">
-            <h2>4. Ваши профессиональные планы</h2>
-            <p>В будущем я планирую связать свою профессиональную деятельность с разработкой программного обеспечения и созданием собственных интеллектуальных систем (ИИ). Моя цель на ближайшие годы — освоить фундаментальные языки и инструменты разработки, чтобы успешно применять их на практике[cite: 2].</p>
+        <!-- Галерея -->
+        <section id="gallery" class="section">
+            <div class="container glass">
+                <h2>Галерея</h2>
+                <div class="gallery-grid">
+                    <!-- Фото здания ГУАП -->
+                    <img src="wr-960.webp" alt="Здание ГУАП" class="gallery-item">
+                    <!-- Повторно сертификат для сетки (по требованию 3-5 фото) -->
+                    <img src="certificate.png" alt="Сертификат Neoflex" class="gallery-item">
+                    <!-- Векторная графика (робот/ИИ) -->
+                    <div class="gallery-item svg-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 19.93C7.06 19.43 4 16.05 4 12C4 7.95 7.06 4.57 11 4.07V19.93ZM13 4.07C16.94 4.57 20 7.95 20 12C20 16.05 16.94 19.43 13 19.93V4.07Z" fill="#3498db"/>
+                        </svg>
+                        <p>AI & Data Science</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- 5. Интересы и навыки -->
-        <section class="card">
-            <h2>5. Ваши интересы и навыки в сфере IT</h2>
-            <p>На текущий момент я активно погружаюсь в мир информационных технологий и пробую различные инструменты разработки:</p>
-            <ul class="skills-list">
-                <li><strong>Языки программирования:</strong> Python (базовый уровень)[cite: 2]</li>
-                <li><strong>Веб-разработка:</strong> HTML / CSS[cite: 2]</li>
-                <li><strong>Инструменты и среды:</strong> Obsidian, Docker, Postman, Kaiten, Miro[cite: 2]</li>
-            </ul>
-            <p>Мне интересно развиваться в сфере программирования и создания современных цифровых продуктов.</p>
-        </section>
-
-        <!-- 6. Индивидуальные достижения -->
-        <section class="card">
-            <h2>6. Индивидуальные достижения и мероприятия</h2>
-            <p>Я только начинаю свой путь в IT, но уже принимаю активное участие в жизни института. <strong>27 октября 2026 года</strong> я посетила официальную экскурсию в IT-компанию <strong>Neoflex</strong> — ключевого партнера Института №4 ГУАП[cite: 2]. Это мероприятие позволило мне увидеть изнутри процессы разработки в крупной технологической компании.</p>
-            
-            <div class="certificate-container">
-                <p class="cert-title"><strong>Сертификат / подтверждение участия:</strong></p>
-                <img src="Родионова Кира Константиновна.png" alt="Сертификат Neoflex" class="cert-image">
+        <!-- Форма обратной связи -->
+        <section id="contact" class="section">
+            <div class="container glass">
+                <h2>Обратная связь</h2>
+                <form id="contactForm" onsubmit="return validateForm(event)">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Ваше сообщение..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
 
+    <!-- Футер -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Родионова Кира | ГУАП | Группа 4616[cite: 2]</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Родионова Кира Константиновна. Все права защищены.</p>
+            <div class="footer-contacts">
+                <a href="mailto:example@mail.ru">example@mail.ru</a> | 
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+            </div>
+            <div class="socials">
+                <!-- Иконки соцсетей (заглушки со ссылками) -->
+                <a href="https://vk.com" target="_blank" title="ВКонтакте">VK</a>
+                <a href="https://github.com" target="_blank" title="GitHub">GitHub</a>
+            </div>
         </div>
     </footer>
 
+    <!-- Валидация формы (проверка на @) -->
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Предотвращаем перезагрузку страницы
+            const email = document.getElementById('email').value;
+            if (!email.includes('@')) {
+                alert('Пожалуйста, введите корректный email (он должен содержать символ @).');
+                return false;
+            }
+            alert('Спасибо! Ваше сообщение отправлено (имитация).');
+            document.getElementById('contactForm').reset();
+            return true;
+        }
+    </script>
 </body>
 </html>
