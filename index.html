@@ -1,143 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио дизайнера интерьеров — Кира Родионова</title>
+    <title>Родионова Кира | Сайт-визитка</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- 4. Навигационное меню -->
-    <header class="header">
-        <div class="container header-inner">
-            <a href="#hero" class="logo">
-                <!-- Адаптивная SVG-графика (требование п. 2) -->
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <span>KR.INTERIOR</span>
-            </a>
-            <nav class="nav">
-                <a href="#hero">Главная</a>
-                <a href="#about">Обо мне</a>
-                <a href="#portfolio">Портфолио</a>
-                <a href="#contacts">Контакты</a>
-            </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Родионова Кира Константиновна</h1>
+            <p class="subtitle">Группа 4616 | Направление 09.03.03 «Прикладная информатика»</p>
+            <p class="focus">Направленность: «Прикладной искусственный интеллект и наука о данных» (ГУАП)</p>
         </div>
     </header>
 
-    <!-- Главный экран -->
-    <section id="hero" class="hero">
-        <div class="container hero-content">
-            <h1>Создаю функциональные и эстетичные интерьеры для жизни</h1>
-            <p>Индивидуальное проектирование жилых и коммерческих пространств в Санкт-Петербурге и удалённо по всему
-                миру.</p>
-            <a href="#contacts" class="btn">Обсудить проект</a>
-        </div>
-    </section>
+    <main class="container">
+        <section class="card">
+            <h2>1. Краткая информация о себе</h2>
+            <p>Здравствуйте! Меня зовут Кира, я студентка Санкт-Петербургского государственного университета аэрокосмического приборостроения (ГУАП), обучаюсь в группе 4616 по программе бакалавриата «Прикладная информатика» (профиль «Прикладной искусственный интеллект и наука о данных»).</p>
+        </section>
 
-    <!-- Обо мне (Текст > 300 символов + оригинальное фото) -->
-    <section id="about" class="section">
-        <div class="container about-grid">
-            <div class="about-photo">
-                <img src="about.JPG" alt="Рабочий процесс дизайнера интерьеров">
-            </div>
-            <div class="about-text">
-                <h2>Обо мне</h2>
-                <p>Меня зовут Кира, я практикующий дизайнер интерьеров с фокусом на современный минимализм,
-                    скандинавскую эстетику и эргономику пространства. В своей работе я опираюсь на реальные сценарии
-                    жизни заказчиков: продумываю логику передвижения, сценарии освещения и системы хранения ещё до
-                    выбора отделочных материалов.</p>
-                <p>Каждый проект включает полный пакет рабочей документации для строителей, 3D-визуализацию ключевых
-                    помещений, подбор мебели и авторский надзор до финальной сдачи объекта.</p>
-            </div>
-        </div>
-    </section>
+        <section class="card">
+            <h2>2. Как я понимаю образовательную программу</h2>
+            <p>Я понимаю эту образовательную программу как подготовку специалистов на стыке классического программирования, анализа больших данных и современных интеллектуальных систем. На мой взгляд, она открывает огромные возможности для создания умных алгоритмов, способных автоматизировать рутинные задачи и решать сложные комплексные проблемы в самых разных сферах жизни.</p>
+        </section>
 
-    <!-- 5. Галерея изображений (сетка CSS Grid, 4 карточки) -->
-    <section id="portfolio" class="section bg-light">
+        <section class="card">
+            <h2>3. Почему я выбрала эту образовательную программу</h2>
+            <p>Я выбрала это направление, потому что меня искренне привлекает сфера IT и мне интересны перспективы профессионального развития в области искусственного интеллекта. Идея создания систем, которые могут обучаться и принимать решения, кажется мне невероятно захватывающей и перспективной.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Мои профессиональные планы</h2>
+            <p>В будущем я планирую связать свою карьеру с программированием и разработкой программного обеспечения. Мне особенно интересна возможность в перспективе создавать собственные ИИ-модели и интеллектуальные приложения. Цель на ближайшие годы — заложить крепкую базу в программировании и алгоритмах, чтобы успешно реализовывать практические проекты.</p>
+        </section>
+
+        <section class="card">
+            <h2>5. Мои интересы и навыки в сфере IT</h2>
+            <p>На данный момент я активно знакомлюсь с миром информационных технологий и уже пробовала работать со следующими инструментами и языками:</p>
+            <ul class="skills-list">
+                <li><strong>Языки программирования:</strong> Python (базовый уровень)</li>
+                <li><strong>Веб-разработка:</strong> HTML / CSS</li>
+                <li><strong>Инструменты и платформы:</strong> Obsidian (для ведения конспектов и работы с базами знаний), Docker, Postman, Kaiten, Miro</li>
+            </ul>
+            <p>Хотя я пока определяюсь с конкретной специализацией, мне очень интересно развиваться в разработке и направлении искусственного интеллекта.</p>
+        </section>
+
+        <section class="card">
+            <h2>6. Индивидуальные достижения</h2>
+            <p>Я только начинаю свой путь в IT-сфере, но уже активно участвую в жизни института. <strong>27 октября 2026 года</strong> я приняла участие в официальной экскурсии в IT-компанию <strong>Neoflex</strong> — ключевого партнера Института №4 ГУАП, что позволило мне ближе познакомиться с реальной индустрией разработки.</p>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-            <h2>Реализованные проекты</h2>
-            <div class="gallery-grid">
-                <article class="card">
-                    <img src="work1.jpg" alt="Интерьер проект 1">
-                    <div class="card-body">
-                        <h3>Квартира на Петроградской</h3>
-                        <p>Минимализм с натуральным деревом и скрытым освещением, 78 м².</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="work2.JPG" alt="Интерьер проект 2">
-                    <div class="card-body">
-                        <h3>Апартаменты в ЖК «Невский»</h3>
-                        <p>Светлая палитра, акустические панели и текстиль, 64 м².</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="work3.JPG" alt="Интерьер проект 3">
-                    <div class="card-body">
-                        <h3>Загородный дом в Репино</h3>
-                        <p>Кухня-гостиная с островом из кварцевого агломерата, 140 м².</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="work4.JPG" alt="Интерьер проект 4">
-                    <div class="card-body">
-                        <h3>Студия для IT-специалиста</h3>
-                        <p>Зонирование рабочего места и зоны отдыха с помощью стеклянных перегородок, 45 м².</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Форма обратной связи с валидацией email -->
-    <section id="contacts" class="section">
-        <div class="container contact-wrapper">
-            <h2>Оставить заявку на дизайн-проект</h2>
-            <p>Заполните форму ниже — я свяжусь с вами для бесплатной консультации по планировке.</p>
-            <form class="contact-form" action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" name="name" placeholder="Анна Смирнова" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Электронная почта</label>
-                    <input type="email" id="email" name="email" placeholder="anna@example.ru" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Сообщение и площадь объекта</label>
-                    <textarea id="message" name="message" rows="4"
-                        placeholder="Здравствуйте! Интересует дизайн-проект двухкомнатной квартиры 65 м²..."
-                        required></textarea>
-                </div>
-                <button type="submit" class="btn">Отправить заявку</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- 7. Футер сайта -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-copy">
-                <p>&copy; 2026 KR.INTERIOR — Студия дизайна интерьеров. Все права защищены.</p>
-            </div>
-            <div class="footer-contacts">
-                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                <a href="mailto:design@kr-interior.ru">design@kr-interior.ru</a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
-                <a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a>
-                <a href="https://ru.pinterest.com/" target="_blank" rel="noopener">Pinterest</a>
-            </div>
+            <p>&copy; 2026 Родионова Кира | ГУАП</p>
         </div>
     </footer>
-
 </body>
-
 </html>
